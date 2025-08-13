@@ -314,6 +314,7 @@ nav{
 .sidebar-close-btn i{
     color: var(--color-gray-dark);
     font-size: 1rem;
+    display: none;
 }
 
 
