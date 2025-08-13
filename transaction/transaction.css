@@ -1,0 +1,45 @@
+body{
+    grid-template-columns: 17rem auto;
+}
+
+.transacionTable{
+    height: fit-content;
+    margin-top: 6rem;
+}
+.transacionTable th{
+    text-align: left;
+    padding: 0.8rem;
+}
+.transacionTable td{
+    padding: 1rem;
+}
+
+.transacionTable tbody tr:nth-child(odd){
+    background: var(--color-white);
+}
+
+
+
+/* media querry */
+
+/* tablet */
+
+@media screen  and (max-width:1020px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+/* tablet */
+
+@media screen  and (max-width:600px){
+    .transacionTable thead tr, .transacionTable tbody tr{
+        display: flex;
+        flex-direction: column;
+    }
+    .transacionTable tbody tr:nth-child(even){
+        border-left: 2px solid var(--color-white);
+    }
+}
